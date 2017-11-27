@@ -9,15 +9,16 @@ class IdeaForm extends Component {
     }
   }
 
-  handleInputChange(value, property) {
-    this.setState({[property]: value})
+  handleInputChange = (event) => {
+    const { value, name } = event.target
+    this.setState({[name]: value})
   }
 
   render() {
     return(
       <div className="IdeaForm">
-        <input value={this.state.title} onChange={(event) => this.handleInputChange(event.target.value, 'title')} placeholder='Title'/>
-        <input value={this.state.description} onChange={(event) => this.handleInputChange(event.target.value, 'description')} placeholder='Description'/>
+        <input value={this.state.title} name='title' onChange={this.handleInputChange} placeholder='Title'/>
+        <input value={this.state.description} name='description' onChange={this.handleInputChange} placeholder='Description'/>
         <button onClick={() => this.props.addIdea(this.state)}>Submit</button>
       </div>
     )
