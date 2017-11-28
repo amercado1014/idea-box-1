@@ -4,7 +4,9 @@ const Card = ({title, description, removeIdea, id}) => (
   <div>
     <h2>{title}</h2>
     <p>{description}</p>
-    <button onClick={() => removeIdea(id)}>Remove</button>
+    <button onClick={() => removeIdea(id)}
+            className='remove-idea'
+      >Remove</button>
   </div>
 )
 

@@ -1,0 +1,239 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardContainer test should match the snapshot :D 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    ideas={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [],
+    },
+    "ref": null,
+    "rendered": Array [],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [],
+      },
+      "ref": null,
+      "rendered": Array [],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`CardContainer test should render 3 cards 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    ideas={
+        Array [
+            Object {
+              "description": "i ate alot of food",
+              "id": 1,
+              "title": "totes full",
+            },
+            Object {
+              "description": "tho why",
+              "id": 2,
+              "title": "why tho",
+            },
+            Object {
+              "description": "will is pretty kewl(really kewl)",
+              "id": 3,
+              "title": "sheeiiitt",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          description="i ate alot of food"
+          id={1}
+          removeIdea={undefined}
+          title="totes full"
+/>,
+        <Card
+          description="tho why"
+          id={2}
+          removeIdea={undefined}
+          title="why tho"
+/>,
+        <Card
+          description="will is pretty kewl(really kewl)"
+          id={3}
+          removeIdea={undefined}
+          title="sheeiiitt"
+/>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "description": "i ate alot of food",
+          "id": 1,
+          "removeIdea": undefined,
+          "title": "totes full",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "description": "tho why",
+          "id": 2,
+          "removeIdea": undefined,
+          "title": "why tho",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "description": "will is pretty kewl(really kewl)",
+          "id": 3,
+          "removeIdea": undefined,
+          "title": "sheeiiitt",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            description="i ate alot of food"
+            id={1}
+            removeIdea={undefined}
+            title="totes full"
+/>,
+          <Card
+            description="tho why"
+            id={2}
+            removeIdea={undefined}
+            title="why tho"
+/>,
+          <Card
+            description="will is pretty kewl(really kewl)"
+            id={3}
+            removeIdea={undefined}
+            title="sheeiiitt"
+/>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "description": "i ate alot of food",
+            "id": 1,
+            "removeIdea": undefined,
+            "title": "totes full",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "description": "tho why",
+            "id": 2,
+            "removeIdea": undefined,
+            "title": "why tho",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "description": "will is pretty kewl(really kewl)",
+            "id": 3,
+            "removeIdea": undefined,
+            "title": "sheeiiitt",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
