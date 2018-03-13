@@ -18,7 +18,8 @@ class App extends React.Component {
     this.setState({ideas})
   }
 
-  removeIdea = (id) => {
+  removeIdea = (event) => {
+    const id = event.target.id
     const newIdeas = this.state.ideas.filter(idea => idea.id !== id)
     this.setState({ideas: newIdeas})
   }

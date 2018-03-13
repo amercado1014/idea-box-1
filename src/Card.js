@@ -4,7 +4,7 @@ const Card = ({title, description, removeIdea, id}) => (
   <div>
     <h2>{title}</h2>
     <p>{description}</p>
-    <button onClick={() => removeIdea(id)}>Remove</button>
+    <button id={id} onClick={removeIdea}>Remove</button>
   </div>
 )
 
