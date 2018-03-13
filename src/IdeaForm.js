@@ -26,9 +26,22 @@ class IdeaForm extends Component {
   render() {
     return(
       <form onSubmit={this.handleSubmit} className="IdeaForm">
-        <input value={this.state.title} name='title' onChange={this.handleInputChange} placeholder='Title' className="title"/>
-        <input value={this.state.description} name='description' onChange={this.handleInputChange} placeholder='Description' className="desc"/>
-        <button type="submit">Submit</button>
+        <input 
+          value={this.state.title} 
+          name='title' 
+          onChange={this.handleInputChange} 
+          placeholder='Title' 
+          className="title"/>
+        <input 
+          value={this.state.description} 
+          name='description' 
+          onChange={this.handleInputChange} 
+          placeholder='Description' 
+          className="desc"/>
+        <button 
+          type="submit"
+          className="submitButton"
+        >Submit</button>
       </form>
     )
   }
